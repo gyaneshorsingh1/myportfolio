@@ -62,6 +62,10 @@ body, html{
     border-radius: 50%;
     padding: 2px;
 }
+.nav span:hover{
+    scale: 1.1;
+    transition: ease-in-out 0.4s;
+}
 .nav span img{
     margin: auto;
     height: 6vh;
