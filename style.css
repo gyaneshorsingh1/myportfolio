@@ -9,27 +9,27 @@
 body, html{
     background-color: white;
     width: 100vw;
-    
     padding: 0;
     margin: 0;
     height: auto;
+    overflow-x: hidden;
+
 }
 
 
 .social-icons{
-    z-index: 1;
-    position: sticky;
-    height: 0;
-    top: 40%;
-    left: 2%;
+    position: absolute;
+    top: 50%;
+    left: 1%;
     transform: translate(-50%,-50%);
     width: 8vh;
     display: flex;
     flex-direction: column;
     row-gap: 3px;
-    background-color: #c72b2b;
+
 }
 .social-icons span{
+    padding: 2px;
     cursor: pointer;
     width: 7vh;
     height: 7vh;
@@ -37,11 +37,13 @@ body, html{
     background-color: rgba(0, 191, 255, 0.664);
     border-radius: 10px;
     color: white;
+    display: flex;
+}
+.social-icons span img{
+    margin: auto;
 }
 
 .nav {
-    position: sticky;
-    top: 0;
     background-color: aliceblue;
     height: 13vh;
     display: flex;
@@ -111,6 +113,7 @@ body, html{
     font-weight: 800;
     font-size: 50px;
     color: #060505df;
+    width: 80%;
 }
 
 .content p {
@@ -238,7 +241,7 @@ body, html{
     
     scale: 1.3;
 }
-.container3>h2{
+.container3>h2, .container4>h2{
     text-align: center;
     font-size: 40px;
     text-transform: uppercase;
@@ -298,7 +301,92 @@ body, html{
     margin-bottom: 2vh;
 }
 
+.container4{
+    height: auto;
+    width: 100vw;
+    padding: 10vh;
+}
+.container4>h2{
+    margin-bottom: 7vh;
+}
+.container4 .contact{
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    gap: 5vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border-radius: 10px;
+    
+}
+.container4 .contact .left{
+    width: 50%;
+    height: auto;
+    padding: 2vh;
+    display: flex;
+}
+.contact .left img{
+    margin: auto;
+    width: 70%;
+    border-radius: 50%;
+}
+.container4 .contact .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 2vh;
+    height: auto;
 
+
+}
+.container4 #fname, #lname, #number, #email{
+    padding: 18px;
+    margin: 12px;
+    width: 90%;
+}
+
+.right button{
+    margin-left: 17px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border-color: transparent;
+    cursor: pointer;
+    background-color: #6ecfeab0;
+    color: rgb(255, 255, 255);
+    margin-top: 2vh;
+    box-shadow: 5px 10px 5px rgba(75, 101, 181, 0.334);
+    width: 180px;
+    font-size: 18px;
+}
+.right button:hover {
+    background-color: aliceblue;
+    color: #6ecfead2;
+    transition: all 0.5s;
+    letter-spacing: 3px;
+}
+.container4 input{
+    padding: 5px;
+    color: #0000004b;
+    background-color: #eae2e26d;
+    border-radius: 12px;
+
+    border-color: transparent;
+    height: 5vh;
+    outline: none;
+}
+.container4 .contact textarea{
+    outline: none;
+    border-radius: 12px;
+    border-color: transparent;
+    padding: 18px;
+    margin: 12px;
+    width: 90%;
+    
+}
 
 footer{
     display: flex;
@@ -432,7 +520,7 @@ footer .contact a{
         width: 100%;
         
     }
-    .container3>h2{
+    .container3>h2, .container4>h2{
         font-size: 25px;
         font-weight: 700;
     }
@@ -456,6 +544,50 @@ footer .contact a{
         font-size: 25px;
         letter-spacing: 2px;
     }
+    .container4{
+        height: auto;
+    }
+    .container4 .contact{
+        flex-direction: column;
+        height: auto;
+        width: 70%;
+        margin: auto;
+        gap: 0;
+        
+    }
+    .container4 .contact .left, .container4 .contact .right{
+        width: 100%;
+        
+    }
+    .container4 .contact{
+        width: 80%;
+        
+    }
+
+    .contact .left img{
+        width: 30%;
+    }
+    .container4 #fname, #lname, #number, #email, .container4 .contact textarea{
+        width: 95%;
+        
+            padding: 18px;
+            margin: 4px;
+            width: 90%;
+        
+    }
+    .right button{
+        margin-left: 17px;
+        padding: 6px 12px;
+        border-radius: 8px;
+        border-color: transparent;
+        cursor: pointer;
+        background-color: #6ecfeab0;
+        color: rgb(255, 255, 255);
+        margin-top: 2vh;
+        box-shadow: 5px 10px 5px rgba(75, 101, 181, 0.334);
+        width: 180px;
+        font-size: 18px;
+    }
     footer{
         flex-wrap: wrap;
         row-gap: 5vh;
@@ -472,6 +604,32 @@ footer .contact a{
     }
     footer a{
         letter-spacing: 1.5px;
+    }
+}
+@media screen and (max-width: 700px){
+    .container2{
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+    }
+    .container2 .intro{
+        
+        padding: 5vw;
+    }
+    .container2 .skills{
+        padding: 5vw;
+        gap: 0;
+        
+    }
+    .container4 .contact{
+        width: 100%;
+        
+    }
+    
+}
+@media screen and (max-width: 600px){
+    .contact .left img{
+        width: 50%;
     }
 }
 
@@ -500,6 +658,7 @@ footer .contact a{
     .container2{
         padding: 5px;
         margin-top: 5vh;
+        
     }
     .container2 h2{
         font-size: 17px;
@@ -564,6 +723,27 @@ footer .contact a{
         line-height: 18px;
         font-size: 12px;
     }
+    
+    .container4{
+        padding: 3vw;        
+    }
+    .container4 .contact{
+        padding: 3vw;
+    }
+    .container4 #fname, #lname, #number, #email, .container4 .contact textarea{
+            width: 100%;
+        
+            padding: 15px;
+            margin: 4px;
+            
+        
+    }
+    .container4 .contact .right button{
+        padding: 2px 15px;
+        margin: auto;
+        width: auto;
+    }
+
     footer{
         padding: 7vh;
     }
