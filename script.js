@@ -9,17 +9,18 @@ function showSidebar(){
     sidebar.style.display = 'none'
 }
 
+document.getElementById("weatherApp").addEventListener("click", function(){
+    window.open("https://gyaneshorsingh1.github.io/weatherapp/","_blank");
+});
 
-// const form = document.querySelector("form");
-// form.addEventListener("submit",(e)=>{
-//     e.preventDefault();
-//     let data = new FormData(form);
-//     fetch('https://script.google.com/macros/s/AKfycbw49_3WZwXyJasjIBoOBTODComm5U_0P5w38dGbWMZGICtAIJOhvXNXiFDnXgfOiank/exec'{
-//         method:"POST",
-//         body: data
-//     })
-//     .then(res => res.text());
-//     .then(data=> console.log(data));
-// })
+document.getElementById("servicePorvider").addEventListener("click",function(){
+    window.open("https://mockvita.com/", "_blank");
+
+});
+document.getElementById("tempCon").addEventListener("click",function(){
+    window.open("https://gyaneshorsingh1.github.io/tempconverter/", "_blank");
+
+});
+
 
 

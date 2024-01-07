@@ -362,6 +362,10 @@ html {
 
 
 }
+.container3 .projects .left img{
+    border-radius: 20px;
+    margin: 3vh 0;
+}
 
 .projects .right {
     width: 50%;
@@ -380,6 +384,20 @@ html {
     font-size: 35px;
     letter-spacing: 3px;
     margin-bottom: 2vh;
+}
+
+.container3 .right span{
+    cursor: pointer;
+    background-color: #6ecfeab0;
+    padding: 5px 15px;
+    
+    color: white;
+    border-radius: 8px;
+    transition: ease-in-out 0.4s;
+}
+.container3 .right span:hover{
+    background-color: whitesmoke;
+    color: #6ecfeab0;
 }
 
 .container4 {
@@ -569,6 +587,8 @@ footer .contact a {
     .project2,
     .project3 {
         width: 85%;
+        margin: auto;
+        margin-right: auto;
     }
 
     .projects .right p {
