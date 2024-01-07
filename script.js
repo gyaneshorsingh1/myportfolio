@@ -9,6 +9,35 @@ function showSidebar(){
     sidebar.style.display = 'none'
 }
 
+//click events for social medias//
+
+//events for github
+document.getElementById("gitHub").addEventListener("click", function(){
+    window.open("https://github.com/gyaneshorsingh1","_blank");
+});
+
+//events for linkedin
+document.getElementById("linkedIn").addEventListener("click", function(){
+    window.open("https://www.linkedin.com/in/gyaneshor-prasad-singh/","_blank");
+});
+
+//events for instagram
+document.getElementById("instaGram").addEventListener("click", function(){
+    window.open("https://www.instagram.com/princerahul132/","_blank");
+});
+
+
+//events for facebook
+document.getElementById("faceBook").addEventListener("click", function(){
+    window.open("https://www.facebook.com/rahulsingh.hancy1","_blank");
+});
+
+
+
+
+
+
+//links of projects
 document.getElementById("weatherApp").addEventListener("click", function(){
     window.open("https://gyaneshorsingh1.github.io/weatherapp/","_blank");
 });
