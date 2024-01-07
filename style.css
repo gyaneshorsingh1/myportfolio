@@ -6,7 +6,8 @@
 
 }
 
-body, html{
+body,
+html {
     background-color: white;
     width: 100vw;
     padding: 0;
@@ -17,18 +18,19 @@ body, html{
 }
 
 
-.social-icons{
+.social-icons {
     position: absolute;
     top: 50%;
     left: 1%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 8vh;
     display: flex;
     flex-direction: column;
     row-gap: 3px;
 
 }
-.social-icons span{
+
+.social-icons span {
     padding: 2px;
     cursor: pointer;
     width: 7vh;
@@ -39,7 +41,8 @@ body, html{
     color: white;
     display: flex;
 }
-.social-icons span img{
+
+.social-icons span img {
     margin: auto;
 }
 
@@ -54,25 +57,32 @@ body, html{
 }
 
 
+
+
 .nav span {
 
     background-color: rgba(0, 191, 255, 0.664);
     width: 7vh;
     height: 7vh;
     display: flex;
-    
+
     border-radius: 50%;
     padding: 2px;
 }
-.nav span:hover{
+
+.nav span:hover {
     scale: 1.1;
     transition: ease-in-out 0.4s;
 }
-.nav span img{
+
+.nav span img {
     margin: auto;
     height: 6vh;
     width: 6vh;
 }
+
+
+
 
 .page {
 
@@ -92,6 +102,29 @@ body, html{
 }
 
 .nav .page a:hover {
+    color: #6ecfeab0;
+}
+
+.nav i {
+
+    position: absolute;
+    display: none;
+    right: 2vw;
+
+
+}
+
+
+
+#page a {
+
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+#page a:hover {
+    transition: ease 0.3s;
     color: #6ecfeab0;
 }
 
@@ -137,7 +170,7 @@ body, html{
 .content button:hover {
     background-color: aliceblue;
     color: #6ecfeae0;
-    
+
     letter-spacing: 3px;
 }
 
@@ -172,27 +205,31 @@ body, html{
     margin-bottom: 10vh;
 }
 
-.info{
+.info {
     display: flex;
     flex-direction: row;
 }
-.info .intro{
+
+.info .intro {
     width: 50%;
     padding: 10vh;
 }
-.info .intro h3{
+
+.info .intro h3 {
     font-size: 30px;
     margin-bottom: 3vh;
     color: #000;
 }
-.info .intro p{
+
+.info .intro p {
     text-align: left;
     letter-spacing: 1px;
     line-height: 25px;
     color: #000000be;
-    
+
 }
-.info .intro button{
+
+.info .intro button {
     padding: 8px 16px;
     border-radius: 8px;
     border-color: transparent;
@@ -203,30 +240,33 @@ body, html{
     width: 180px;
     font-size: 18px;
 }
+
 .intro button:hover {
     background-color: aliceblue;
     color: #6ecfead2;
     transition: all 0.5s;
     letter-spacing: 3px;
 }
-.info .skills{
+
+.info .skills {
     width: 50%;
     height: 55vh;
     padding: 10vh;
     display: flex;
     flex-wrap: wrap;
     gap: 2vh;
-    
-    
+
+
 }
-.info .skills li{
-    
+
+.info .skills li {
+
     display: flex;
     align-items: center;
     background-color: #6ecfea45;
     color: rgb(78, 82, 86);
     border-radius: 6px;
-    
+
     width: fit-content;
     list-style: none;
     height: 7vh;
@@ -237,11 +277,14 @@ body, html{
     letter-spacing: 2px;
 
 }
-.skills li:hover{
-    
+
+.skills li:hover {
+
     scale: 1.3;
 }
-.container3>h2, .container4>h2{
+
+.container3>h2,
+.container4>h2 {
     text-align: center;
     font-size: 40px;
     text-transform: uppercase;
@@ -249,13 +292,17 @@ body, html{
     letter-spacing: 3px;
     padding-top: 10vh
 }
-.projects{
+
+.projects {
     display: flex;
     flex-direction: column;
     gap: 30vh;
     margin: 20vh 0;
 }
-.projects .project1, .project2, .project3{
+
+.projects .project1,
+.project2,
+.project3 {
     width: 70%;
     height: auto;
     margin: auto;
@@ -270,46 +317,50 @@ body, html{
 }
 
 
-.project2{
+.project2 {
     flex-direction: row-reverse;
-    
+
 }
 
-.projects .left{
-    
-    width: 50%;
-    padding: 5vh;
-    
-    
-    
-}
+.projects .left {
 
-.projects .right{
     width: 50%;
     padding: 5vh;
 
+
+
 }
-.projects .right p{
+
+.projects .right {
+    width: 50%;
+    padding: 5vh;
+
+}
+
+.projects .right p {
     letter-spacing: 1.2px;
     line-height: 35px;
     color: #000000a9;
 }
-.projects .right h3{
+
+.projects .right h3 {
     text-decoration: underline;
     font-size: 35px;
     letter-spacing: 3px;
     margin-bottom: 2vh;
 }
 
-.container4{
+.container4 {
     height: auto;
     width: 100vw;
     padding: 10vh;
 }
-.container4>h2{
+
+.container4>h2 {
     margin-bottom: 7vh;
 }
-.container4 .contact{
+
+.container4 .contact {
     display: flex;
     flex-direction: row;
     height: 80vh;
@@ -320,20 +371,23 @@ body, html{
     backdrop-filter: blur(0px);
     -webkit-backdrop-filter: blur(0px);
     border-radius: 10px;
-    
+
 }
-.container4 .contact .left{
+
+.container4 .contact .left {
     width: 50%;
     height: auto;
     padding: 2vh;
     display: flex;
 }
-.contact .left img{
+
+.contact .left img {
     margin: auto;
     width: 70%;
     border-radius: 50%;
 }
-.container4 .contact .right{
+
+.container4 .contact .right {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -343,13 +397,17 @@ body, html{
 
 
 }
-.container4 #fname, #lname, #number, #email{
+
+.container4 #fname,
+#lname,
+#number,
+#email {
     padding: 18px;
     margin: 12px;
     width: 90%;
 }
 
-.right button{
+.right button {
     margin-left: 17px;
     padding: 8px 16px;
     border-radius: 8px;
@@ -362,13 +420,15 @@ body, html{
     width: 180px;
     font-size: 18px;
 }
+
 .right button:hover {
     background-color: aliceblue;
     color: #6ecfead2;
     transition: all 0.5s;
     letter-spacing: 3px;
 }
-.container4 input{
+
+.container4 input {
     padding: 5px;
     color: #0000004b;
     background-color: #eae2e26d;
@@ -378,7 +438,8 @@ body, html{
     height: 5vh;
     outline: none;
 }
-.container4 .contact textarea{
+
+.container4 .contact textarea {
     outline: none;
     border-radius: 12px;
     border-color: transparent;
@@ -386,197 +447,270 @@ body, html{
     margin: 12px;
     width: 90%;
     background-color: #eae2e26d;
-    
+
 }
 
-footer{
+footer {
     display: flex;
     padding: 10vh;
-    
+
     overflow: hidden;
     justify-content: space-between;
     height: auto;
     color: white;
     background-color: #6ecfeae0;
-    
+
     border-radius: 30px 30px 0 0;
 }
-footer .quick-links, .social-medias, .contact, .footer-about{
+
+footer .quick-links,
+.social-medias,
+.contact,
+.footer-about {
     width: 20%;
     display: flex;
     flex-direction: column;
     gap: 2px;
-    
-    
-    
+
+
+
 }
-footer p{
-    
+
+footer p {
+
     letter-spacing: 1.5px;
 }
-footer h3{
+
+footer h3 {
     text-decoration: underline;
     margin-bottom: 1vh;
 }
 
-footer a{
+footer a {
     width: auto;
     text-decoration: none;
     color: white;
 }
-footer a:hover{
+
+footer a:hover {
     color: #350d0d66;
     transition: all 0.5s;
     scale: 1.1;
 }
-footer .contact a{
+
+footer .contact a {
     word-wrap: break-word;
 }
 
 
 
 @media screen and (max-width: 1024px) {
-    .container2 h2{
+    .container2 h2 {
         font-size: 30px;
         letter-spacing: 2px;
     }
-    .info .intro p{
+
+    .info .intro p {
         letter-spacing: 0;
         line-height: normal;
         font-size: 14px;
     }
-    .info .intro{
+
+    .info .intro {
         padding: 10vh 5vh;
     }
-    .info .skills{
+
+    .info .skills {
         padding: 10vh 5vh;
-        
+
     }
-    .info .skills li{
+
+    .info .skills li {
         margin: 1vh;
     }
-    .info .skills li:hover{
+
+    .info .skills li:hover {
         scale: 1.1;
     }
 
-    .projects .project1, .project2, .project3{
+    .projects .project1,
+    .project2,
+    .project3 {
         width: 85%;
     }
-    .projects .right p{
+
+    .projects .right p {
         line-height: 24px;
     }
 
-    footer{
+    footer {
         gap: 1vh;
     }
-    footer .quick-links, .social-medias, .contact, .footer-about{
+
+    footer .quick-links,
+    .social-medias,
+    .contact,
+    .footer-about {
         width: 25%;
-        
+
     }
-    footer p{
+
+    footer p {
         letter-spacing: 0.3px;
     }
-    footer a:hover{
+
+    footer a:hover {
         scale: 1.02;
     }
 }
+
 @media screen and (max-width: 768px) {
-    .nav .page{
+
+    .page {
         display: none;
     }
-    .nav{
+
+    #page {
+        position: absolute;
+        display: flex;
+        row-gap: 6px;
+        flex-direction: column;
+        width: 40vw;
+        top: 10%;
+        right: 0;
+        text-align: center;
+        padding: 15px;
+        margin: 0;
+        background-color: aliceblue;
+        
+    }
+    
+
+    .nav {
         padding: 20px;
         margin: 0;
     }
-    .content>h2{
+
+    .nav i {
+        display: block;
+    }
+
+    .content>h2 {
         font-size: 30px;
     }
-    .content p{
+
+    .content p {
         font-size: 15px;
     }
-    .content button{
+
+    .content button {
         padding: 15px 45px;
     }
-    .container2 h2{
+
+    .container2 h2 {
         font-size: 25px;
         font-weight: 700;
     }
-    .container2>p{
+
+    .container2>p {
         font-size: 15px;
     }
 
     .info {
         flex-direction: column;
     }
-    .info .intro{
+
+    .info .intro {
         width: 100%;
         padding: 0 10vh;
     }
-    .info .intro p{
+
+    .info .intro p {
         line-height: 20px;
     }
-    .info .skills{
+
+    .info .skills {
         height: auto;
         padding: 10vh;
         width: 100%;
-        
+
     }
-    .container3>h2, .container4>h2{
+
+    .container3>h2,
+    .container4>h2 {
         font-size: 25px;
         font-weight: 700;
     }
-    .projects .project1, .project2,.project3{
+
+    .projects .project1,
+    .project2,
+    .project3 {
         flex-direction: column;
         padding: 0;
-        
+
     }
-    .projects .right{
+
+    .projects .right {
         width: 100%;
-        
+
     }
-    .projects .left{
+
+    .projects .left {
         width: 50%;
         padding: 0;
     }
-    .projects .right p{
+
+    .projects .right p {
         letter-spacing: 1px;
     }
-    .projects .right h3{
+
+    .projects .right h3 {
         font-size: 25px;
         letter-spacing: 2px;
     }
-    .container4{
+
+    .container4 {
         height: auto;
     }
-    .container4 .contact{
+
+    .container4 .contact {
         flex-direction: column;
         height: auto;
         width: 70%;
         margin: auto;
         gap: 0;
-        
-    }
-    .container4 .contact .left, .container4 .contact .right{
-        width: 100%;
-        
-    }
-    .container4 .contact{
-        width: 80%;
-        
+
     }
 
-    .contact .left img{
+    .container4 .contact .left,
+    .container4 .contact .right {
+        width: 100%;
+
+    }
+
+    .container4 .contact {
+        width: 80%;
+
+    }
+
+    .contact .left img {
         width: 30%;
     }
-    .container4 #fname, #lname, #number, #email, .container4 .contact textarea{
+
+    .container4 #fname,
+    #lname,
+    #number,
+    #email,
+    .container4 .contact textarea {
         width: 95%;
-        
-            padding: 18px;
-            margin: 4px;
-            width: 90%;
-        
+
+        padding: 18px;
+        margin: 4px;
+        width: 90%;
+
     }
-    .right button{
+
+    .right button {
         margin-left: 17px;
         padding: 6px 12px;
         border-radius: 8px;
@@ -589,177 +723,226 @@ footer .contact a{
         width: 180px;
         font-size: 18px;
     }
-    footer{
+
+    footer {
         flex-wrap: wrap;
         row-gap: 5vh;
     }
-    footer h3{
+
+    footer h3 {
         letter-spacing: 1.5px;
     }
-    footer .quick-links, .social-medias, .contact, .footer-about{
+
+    footer .quick-links,
+    .social-medias,
+    .contact,
+    .footer-about {
         width: 90vw;
         text-align: center;
-    } 
-    footer p{
+    }
+
+    footer p {
         letter-spacing: 1.5px;
     }
-    footer a{
+
+    footer a {
         letter-spacing: 1.5px;
     }
 }
-@media screen and (max-width: 700px){
-    .container2{
+
+@media screen and (max-width: 700px) {
+    .container2 {
         width: 100vw;
         padding: 0;
         margin: 0;
     }
-    .container2 .intro{
-        
+
+    .container2 .intro {
+
         padding: 5vw;
     }
-    .container2 .skills{
+
+    .container2 .skills {
         padding: 5vw;
         gap: 0;
-        
+
     }
-    .container4 .contact{
+
+    .container4 .contact {
         width: 100%;
-        
+
     }
-    
+
 }
-@media screen and (max-width: 600px){
-    .contact .left img{
+
+@media screen and (max-width: 600px) {
+    .contact .left img {
         width: 50%;
     }
 }
 
-@media screen and (max-width: 430px)  {
-    .nav{
+@media screen and (max-width: 430px) {
+    .nav {
         height: 10vh;
         padding: 5px 10px;
     }
-    footer .quick-links, .social-medias, .contact, .footer-about{
+
+    footer .quick-links,
+    .social-medias,
+    .contact,
+    .footer-about {
         text-align: left;
-        
+
     }
-    .content>h2{
+
+    .content>h2 {
         margin-top: -5vh;
         font-size: 18px;
         width: 90%;
-    } 
-    .content>p{
+    }
+
+    .content>p {
         font-size: 12px;
         width: 80%;
-    } 
-    .content button{
+    }
+
+    .content button {
         padding: 5px 10px;
         font-size: 15px;
-    } 
-    .container2{
+    }
+
+    .container2 {
         padding: 5px;
         margin-top: 5vh;
-        
+
     }
-    .container2 h2{
+
+    .container2 h2 {
         font-size: 17px;
         font-weight: 750;
-    } 
-    .container2 p{
+    }
+
+    .container2 p {
         padding: 0;
         font-size: 12px;
         letter-spacing: 0.5px;
     }
-    .info .intro{
+
+    .info .intro {
         padding: 0px 4vh;
     }
-    .info .intro h3{
+
+    .info .intro h3 {
         font-size: 18px;
     }
-    .info .intro p{
+
+    .info .intro p {
         font-size: 12px;
         line-height: normal;
     }
-    .info .intro button{
+
+    .info .intro button {
         padding: 4px;
         width: 150px;
         font-size: 15px;
     }
-    .info .skills{
+
+    .info .skills {
         padding: 3vh;
     }
-    .info .skills li{
+
+    .info .skills li {
         font-size: 14px;
         letter-spacing: 0.5px;
         padding: 0 10px;
         height: 5vh;
 
     }
-    .container3>h2{
+
+    .container3>h2 {
         font-size: 18px;
         letter-spacing: 1px;
     }
-    .projects{
+
+    .projects {
         margin: 10vh 0;
         gap: 25vh;
     }
-    .projects .project1, .project2, .project3{
+
+    .projects .project1,
+    .project2,
+    .project3 {
         width: 81%;
         padding: 0px;
-        
+
     }
-    .projects .left{
+
+    .projects .left {
         padding: 1vh;
         width: 100%;
     }
-    .projects .right{
+
+    .projects .right {
         padding: 1vh;
     }
-    .projects .right h3{
+
+    .projects .right h3 {
         font-size: 18px;
         letter-spacing: 1px;
     }
-    .projects .right p{
+
+    .projects .right p {
         letter-spacing: 0.5px;
         line-height: 18px;
         font-size: 12px;
     }
-    
-    .container4{
-        padding: 3vw;        
-    }
-    .container4 .contact{
+
+    .container4 {
         padding: 3vw;
     }
-    .container4 #fname, #lname, #number, #email, .container4 .contact textarea{
-            width: 100%;
-        
-            padding: 15px;
-            margin: 4px;
-            
-        
+
+    .container4 .contact {
+        padding: 3vw;
     }
-    .container4 .contact .right button{
+
+    .container4 #fname,
+    #lname,
+    #number,
+    #email,
+    .container4 .contact textarea {
+        width: 100%;
+
+        padding: 15px;
+        margin: 4px;
+
+
+    }
+
+    .container4 .contact .right button {
         padding: 2px 15px;
         margin: auto;
         width: auto;
     }
 
-    footer{
+    footer {
         padding: 7vh;
     }
-    footer h3{
+
+    footer h3 {
         font-size: 15px;
     }
-    footer p{
+
+    footer p {
         letter-spacing: 0.8px;
         font-size: 12px;
     }
-    footer a{
+
+    footer a {
         letter-spacing: 0.5px;
         font-size: 15px;
     }
-    footer .contact a{
+
+    footer .contact a {
         font-size: 12px;
     }
-}   
+}
