@@ -196,7 +196,7 @@ html {
     color: rgb(255, 255, 255);
     background-color: #6ecfeab0;
     border-color: transparent;
-    transition: all 0.5s;
+    
 }
 
 .content button:hover {
