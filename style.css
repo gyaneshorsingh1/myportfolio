@@ -60,7 +60,7 @@ html {
 
 
 .nav span {
-
+    cursor: pointer;
     background-color: rgba(0, 191, 255, 0.664);
     width: 7vh;
     height: 7vh;
@@ -109,21 +109,38 @@ html {
 
     position: absolute;
     display: none;
+    
     right: 2vw;
 
 
 }
 
+.sidebar{
+    transition: ease 2s;
+    position: fixed;
+    z-index: 0;
+    right: 0;
+    top: 0;
+    display: none;
+    flex-direction: column;
+    row-gap: 5vh;
+    
+    height: 100vh;
+    width: 40%;
+    background-color: #ac9f9f36;
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    
+}
 
-
-#page a {
+.sidebar a {
 
     text-decoration: none;
     color: #000;
     font-size: 20px;
 }
 
-#page a:hover {
+.sidebar a:hover {
     transition: ease 0.3s;
     color: #6ecfeab0;
 }
@@ -566,25 +583,10 @@ footer .contact a {
 
 @media screen and (max-width: 768px) {
 
-    .page {
+    
+    .page{
         display: none;
     }
-
-    #page {
-        position: absolute;
-        display: flex;
-        row-gap: 6px;
-        flex-direction: column;
-        width: 40vw;
-        top: 10%;
-        right: 0;
-        text-align: center;
-        padding: 15px;
-        margin: 0;
-        background-color: aliceblue;
-        
-    }
-    
 
     .nav {
         padding: 20px;
@@ -592,6 +594,7 @@ footer .contact a {
     }
 
     .nav i {
+        cursor: pointer;
         display: block;
     }
 
@@ -787,6 +790,10 @@ footer .contact a {
         padding: 5px 10px;
     }
 
+    .sidebar{
+        width: 100vw;
+        padding-left: 5vh;
+    }
     footer .quick-links,
     .social-medias,
     .contact,
