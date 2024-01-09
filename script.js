@@ -324,7 +324,7 @@ gsap.from("footer .quick-links, footer .footer-about, footer .social-medias, foo
         scroller:"body",
         start:"top 80%",
         end: "top 80%",
-        markers:true,
+        
         scrub: 5
         
     }
