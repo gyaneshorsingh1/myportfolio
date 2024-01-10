@@ -64,6 +64,7 @@ tl.from(".nav, .nav span, .nav .page,.social-icons",{
     opacity:0,
     stagger:0.3
 })
+
 tl.from(".social-icons span",{
     x: 300,
     duration:0.5,
@@ -96,6 +97,7 @@ gsap.from(".container2 h2, .container2 h3",{
     opacity:0,
     y:-50,
     duration:1,
+    delay:1,
     stagger:0.3,
     scrollTrigger:{
         trigger:".container2 h2,.container2 h3",
@@ -140,13 +142,16 @@ gsap.from(".container2 .skills",{
 gsap.from(".container3 h2",{
     scale:0,
     opacity:0,
-    y:-50,
+    y:-200,
     duration:3,
     stagger:0.3,
+    delay:1,
     scrollTrigger:{
         trigger:".container3 h2",
         scroller:"body",
         start:"top 50%",
+        end:"top 20%",
+        scrub:3
         
     
     }
@@ -159,13 +164,16 @@ gsap.from(".container3 .project1 .right",{
     opacity:0,
     x: 300,
     y: -200,
-    delay:0.5,
+    delay:1,
     duration:2,
     stagger:0.3,
     scrollTrigger:{
         trigger:".container3 .project1 .right",
         scroller:"body",
-        start:"top 70%"
+        start:"top 80%",
+        end:"top 40%",
+        scrub:3,
+        
         
     
     }
@@ -175,13 +183,15 @@ gsap.from(".container3 .project1 img",{
     opacity:0,
     x: -300,
     y: -200,
-    delay:0.5,
+    delay:1,
     duration:1,
     stagger:0.3,
     scrollTrigger:{
         trigger:".container3 .project1 img",
         scroller:"body",
-        start:"top 70%",
+        start:"top 80%",
+        end:"top 40%",
+        scrub:3
         
     
     }
@@ -194,13 +204,15 @@ gsap.from(".container3 .project2 .right",{
     opacity:0,
     x: -300,
     y: -200,
-    delay:0.5,
+    delay:1,
     duration:1,
     stagger:0.3,
     scrollTrigger:{
         trigger:".container3 .project2 .right",
         scroller:"body",
-        start:"top 80%"
+        start:"top 80%",
+        end:"top 50%",
+        scrub:3
         
     
     }
@@ -210,13 +222,15 @@ gsap.from(".container3 .project2 img",{
     opacity:0,
     x: 300,
     y: -200,
-    delay:0.5,
+    delay:1,
     duration:1,
     stagger:0.3,
     scrollTrigger:{
         trigger:".container3 .project2 img",
         scroller:"body",
         start:"top 80%",
+        end:"top 50%",
+        scrub:3
         
     
     }
@@ -230,29 +244,32 @@ gsap.from(".container3 .project3 .right",{
     opacity:0,
     x: 300,
     y: -200,
-    delay:0.5,
+    delay:1,
     duration:2,
     stagger:0.3,
     scrollTrigger:{
         trigger:".container3 .project3 .right",
         scroller:"body",
-        start:"top 90%"
-        
+        start:"top 90%",
+        end:"top 50%",
+        scrub:3
     
     }
 })
 gsap.from(".container3 .project3 img",{
-    scale:1.5,
+    scale:0,
     opacity:0,
-    x: -300,
-    y: -100,
-    delay:0.5,
+    x: -500,
+    y: -300,
+    delay:1,
     duration:1,
     stagger:0.3,
     scrollTrigger:{
         trigger:".container3 .project3 img",
         scroller:"body",
         start:"top 90%",
+        end:"top 50%",
+        scrub:3
         
     
     }
@@ -264,12 +281,15 @@ gsap.from(".container4 h2",{
     scale:0,
     opacity:0,
     y:-50,
+    delay:1,
     duration:2,
     stagger:0.3,
     scrollTrigger:{
         trigger:".container4 h2",
         scroller:"body",
-        start:"top 110%",
+        start:"top 90%",
+        end:"top 50%",
+        scrub:3
         
     }
 })
@@ -280,13 +300,16 @@ gsap.from(".container4 .right",{
     opacity:0,
     x: 300,
     y: -200,
-    delay:0.5,
+    delay:1,
     duration:2,
     stagger:0.3,
     scrollTrigger:{
         trigger:".container4 .right",
+        
         scroller:"body",
-        start:"top 90%"
+        start:"top 85%",
+        end:"top 50%",
+        scrub:3
         
     
     }
@@ -296,13 +319,15 @@ gsap.from(".container4 img",{
     opacity:0,
     x: -300,
     y: -100,
-    delay:0.5,
+    delay:1,
     duration:2,
     stagger:0.3,
     scrollTrigger:{
         trigger:".container4 img",
         scroller:"body",
-        start:"top 90%",
+        start:"top 85%",
+        end:"top 50%",
+        scrub:3
         
     
     }
@@ -316,16 +341,15 @@ gsap.from("footer .quick-links, footer .footer-about, footer .social-medias, foo
     opacity:0,
     x: -300,
     y: -100,
-    
-    duration:1,
-    stagger:0.3,
+    delay:1,
+    duration:3,
+    stagger:1,
     scrollTrigger:{
         trigger:"footer .quick-links, footer .footer-about, footer .social-medias, footer .contact",
         scroller:"body",
-        start:"top 80%",
-        end: "top 80%",
-        
-        scrub: 5
+        start:"top 90%",
+        end: "top 60%",
+        scrub: 2
         
     }
 })

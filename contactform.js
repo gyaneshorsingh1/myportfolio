@@ -9,7 +9,11 @@ form.addEventListener("submit",(e)=>{
     }).then((res)=>res.text())
     .then((finalRes)=>{
         e.target.btn.innerHTML="Submit";
+        form.reset();
         document.querySelector("#submited").innerHTML=finalRes;
+        setTimeout(() => {
+            document.querySelector("#submited").innerHTML="";
+        }, 5000);
     })
     e.preventDefault();
     
