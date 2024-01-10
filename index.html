@@ -128,7 +128,7 @@
                         <br>
                         <span id="tempCon">Click here</span>
                     </div>
-                </div>
+                </div> 
 
             </div>
 
@@ -139,13 +139,14 @@
                 <div class="left"  id="contact">
                     <img src="./A4 size photo.png" alt="">
                 </div>
-                <form action="https://script.google.com/macros/s/AKfycbw49_3WZwXyJasjIBoOBTODComm5U_0P5w38dGbWMZGICtAIJOhvXNXiFDnXgfOiank/exec" class="right" method="post">
-                    <input type="text" name="fname" id="fname" placeholder="First Name">
-                    <input type="text" name="lname" id="lname" placeholder="Last Name">
-                    <input type="number" name="number" id="number" placeholder=" Enter Mobile number">
-                    <input type="email" name="email" id="email" placeholder=" Enter Email">
-                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Message"></textarea>
-                    <button type="submit">Submit</button>
+                <form class="right" method="post" id="form">
+                    <p id="submited" style="color:green; font-size:14px;"></p>
+                    <input type="text" name="fname" id="fname" placeholder="First Name" required>
+                    <input type="text" name="lname" id="lname" placeholder="Last Name" required>
+                    <input type="number" name="number" id="number" placeholder=" Enter Mobile number" required>
+                    <input type="email" name="email" id="email" placeholder=" Enter Email" required>
+                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Message" required></textarea>
+                    <button type="submit" name="btn">Submit</button>
                 </form>
             </div>
 
@@ -186,6 +187,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
+    <script src="contactform.js"></script>
 </body>
 
 </html>
