@@ -5,8 +5,13 @@ const sidebar = document.querySelector(".sidebar");
 function showSidebar(){
     
     sidebar.style.display = 'flex';
+    sidebar.style.left = "0%";
+    hidebar.style.display = 'flex';
+    hidebar.style.left = "0%"
 }function hideSidebar(){
-    sidebar.style.display = 'none'
+    sidebar.style.display = 'none';
+    hidebar.style.display = 'none';
+    hidebar.style.left = "0%"
 }
 
 //click events for social medias//

@@ -13,12 +13,10 @@ html {
     padding: 0;
     margin: 0;
     height: auto;
-    overflow-x: hidden;
     scroll-behavior: smooth;
-    scroll-snap-type: mandatory;
-
-
+    overflow-x: hidden;
 }
+
 
 
 .social-icons {
@@ -88,7 +86,7 @@ html {
 
 
 .page {
-
+    scroll-snap-align: center;
     display: flex;
     justify-content: space-between;
     gap: 25px;
@@ -112,59 +110,52 @@ html {
 
     position: absolute;
     display: none;
-    
     right: 2vw;
 
 
 }
+.nav i img{
+    width: 40px;
+}
 
 .sidebar{
-    transition: all 2s;
-    position: fixed;
-    z-index: 0;
-    right: 0;
-    top: 0;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 0%;
+    padding-top: 10vh;
     display: none;
     flex-direction: column;
+    align-items: center;
     row-gap: 5vh;
-    
     height: 100vh;
-    width: 40%;
+    width: 100%;
     background-color: #ac9f9f36;
     backdrop-filter: blur(10px);
-    padding: 15px;
     
 }
 
+
 .sidebar a {
-    transition: ease-in-out 0.3s;
     text-decoration: none;
     color: #000;
     font-size: 20px;
+    
 }
 
 .sidebar a:hover {
-    
-    display: flex;
     color: #6ecfeab0;
-    scale: 1.1;
-    padding-left: 1.5vh;
-
 }
-.sidebar a:nth-child(1){
+#hidebar{
+    display: none;
     position: relative;
-    margin: 2vh 0;
-    
-}
-.sidebar a:nth-child(1):hover{
-    scale: none;
-    padding: 0;
-}
-.sidebar a img{
-    position: fixed;
+    right: 0px;
+    top: -2px;
+    z-index: 2;
 }
 
 .content {
+    
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -230,6 +221,7 @@ html {
     padding: 25px;
     align-items: center;
     margin-top: 10vh;
+    scroll-snap-align: center;
 }
 
 .container2>p {
