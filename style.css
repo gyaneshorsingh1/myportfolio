@@ -138,6 +138,7 @@ html {
 
 .sidebar a {
     text-decoration: none;
+    margin-right: 20px;
     color: #000;
     font-size: 20px;
     
@@ -172,9 +173,12 @@ html {
     letter-spacing: 3px;
     font-weight: 800;
     font-size: 50px;
-    color: #060505df;
+    color: #060505e5;
     width: 80%;
+    position: relative;
+    
 }
+
 
 .content p {
     font-size: 20px;

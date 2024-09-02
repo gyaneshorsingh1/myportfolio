@@ -2,16 +2,21 @@
 
 
 const sidebar = document.querySelector(".sidebar");
+const hidebar = document.querySelector("#hidebar");
+const myintro = document.querySelector("#myintro");
 function showSidebar(){
     
     sidebar.style.display = 'flex';
     sidebar.style.left = "0%";
     hidebar.style.display = 'flex';
     hidebar.style.left = "0%"
+    myintro.style.display = "none";
+
 }function hideSidebar(){
     sidebar.style.display = 'none';
     hidebar.style.display = 'none';
     hidebar.style.left = "0%"
+    myintro.style.display = "block";
 }
 
 //click events for social medias//
