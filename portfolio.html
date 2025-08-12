@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smooth Column Animation Grid with Hover</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      width: 100vw;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(16, 1fr);
+      grid-template-rows: repeat(8, 1fr);
+      width: 100vw;
+      height: 100%;
+    }
+
+    .box {
+      background-color: #729bda1d;
+      border: 0.1px solid #899ec4b3;
+      margin: 2px;
+      height: 15px;
+      width: 15px;
+      rotate: 45deg;
+      
+      transition: background-color 0.5s ease, transform 0.5s ease;
+      animation: fadeInOut 5s ease-in-out infinite;
+      backdrop-filter: blur(10px);
+      box-shadow: inset 5px 5px 5px rgba(102, 114, 163, 0.163);
+    }
+
+    .box:hover {
+      background-color: #6366f1; /* Hover color */
+      transform: scale(1.1); /* Slight zoom on hover */
+      cursor: pointer;
+      transition: ease-in-out 0.3s;
+    }
+
+    @keyframes fadeInOut {
+      0% {
+        background-color: #c5d0e170;
+        
+      }
+      20%,40% {
+        background-color: #0e65debd;
+      }
+      40%,100% {
+        background-color: #c5d0e170;
+        
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="grid-container" id="grid"></div>
+
+<script>
+  const container = document.getElementById('grid');
+  const rows = 8;
+  const cols = 16;
+
+  for (let row = 0; row < rows; row++) {
+    for (let col = 0; col < cols; col++) {
+      const box = document.createElement('div');
+      box.classList.add('box');
+
+      // Delay animation column-wise
+      const delay = col * 0.1 + row * 0.01;
+      box.style.animationDelay = `${delay}s`;
+
+      container.appendChild(box);
+    }
+  }
+</script>
+
+</body>
+</html>
